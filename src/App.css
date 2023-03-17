@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /* Pseudo-class that matches the root element of the document. */
 :root {
   --dark-shades: #240046;
@@ -14,7 +16,6 @@
 body {
   background-color: var(--light-shades);
   font-family: var(--body);
-  color: var(--dark-shades);
 }
 
 /* To ensure that the entire page is covered and there are no margins or padding around it. */
@@ -22,6 +23,10 @@ html,
 body {
   height: 100%;
   margin: 0;
+}
+
+header {
+  color: var(--light-shades);
 }
 
 /* Ensures that the main content takes up at least the full height of the page. */
@@ -93,9 +98,12 @@ input::placeholder {
 }
 
 .light-shades,
-.btn:hover,
-.glowing-btn:hover {
-  color: var(--light-shades);
+.btn:hover {
+  color: var(--light-shades) !important;
+}
+
+.main-brand {
+  color: var(--main-brand);
 }
 
 /* When hovering, the link color will change to smooth transitions between the three specified colors */
@@ -121,7 +129,6 @@ input::placeholder {
 .light-hv:hover {
   background-clip: inherit;
   -webkit-text-fill-color: var(--light-shades);
-  text-shadow: 2px 4px 2px var(--dark-accent);
 }
 
 .card,
