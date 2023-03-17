@@ -1,0 +1,139 @@
+/* Pseudo-class that matches the root element of the document. */
+:root {
+  --dark-shades: #240046;
+  --dark-accent: #6444c3;
+  --main-brand: #49d3f4;
+  --light-accent: #f0a0cf;
+  --light-shades: #f6eef3;
+  --gradient-dark: linear-gradient(45deg, var(--dark-shades), var(--light-accent), var(--dark-accent));
+  --gradient: -webkit-linear-gradient(45deg, var(--dark-accent), var(--light-accent), var(--main-brand));
+  --heading: 'Shantell Sans', cursive;
+  --body: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--light-shades);
+  font-family: var(--body);
+  color: var(--dark-shades);
+}
+
+/* To ensure that the entire page is covered and there are no margins or padding around it. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ensures that the main content takes up at least the full height of the page. */
+main {
+  min-height: calc(100% - 3em);
+  /* 3em is the height of the footer */
+}
+
+/* This ensures that the footer always stays at the bottom of the page, regardless of the height of the main content. */
+footer {
+  height: 3em;
+}
+
+/* Displays smooth transitions between the three specified colors - The linear gradient goes diagonally as defined by the 45 degrees */
+.background-gradient {
+  background: var(--gradient-dark);
+}
+
+.gradient {
+  background: var(--gradient);
+}
+
+/* Removes the underline default for anchors tags */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Width for the buttons */
+.width-20 {
+  width: 20em;
+}
+
+.navbar-brand {
+  font-size: 28px;
+}
+
+/* passwordHelpBlock */
+.fs-micro {
+  font-size: 12px;
+}
+
+.fs-small {
+  font-size: 14px;
+}
+
+.heading-font {
+  font-family: var(--heading);
+}
+
+.dark-accent,
+input[type=text],
+input[type=text]:focus,
+textarea[type=text],
+textarea[type=text]:focus {
+  color: var(--dark-accent);
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.light-accent,
+.glowing-btn:hover .faulty-letter {
+  color: var(--light-accent);
+}
+
+.light-shades,
+.btn:hover,
+.glowing-btn:hover {
+  color: var(--light-shades);
+}
+
+/* When hovering, the link color will change to smooth transitions between the three specified colors */
+.gradient-hv:hover,
+.gradient-text {
+  background: var(--gradient);
+  /* Need to set that is a text you are removing the background / color or the gradient won't work */
+  -webkit-background-clip: text;
+  background-clip: none;
+  /* Text-fill needs to be transparent to show the gradient */
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+}
+
+.btn {
+  border: none;
+  outline: none;
+}
+
+.light-hv:hover {
+  background-clip: inherit;
+  -webkit-text-fill-color: var(--light-shades);
+  text-shadow: 2px 4px 2px var(--dark-accent);
+}
+
+.card,
+input,
+textarea {
+  background-color: var(--light-shades);
+  border-radius: 15px;
+  box-shadow: 0 5px 8px var(--light-accent);
+}
+
+textarea {
+  resize: none;
+  white-space: pre-wrap;
+  /* Any line breaks or multiple spaces that were entered in the textarea will be preserved and displayed */
+}
