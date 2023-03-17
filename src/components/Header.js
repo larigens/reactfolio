@@ -47,7 +47,7 @@ function Header({ currentPage, setCurrentPage }) {
                                     className="gradient-text heading-font fw-bold">Larissa!</span> </h1>
                             </div>
                             <div className="text-center mb-5 mt-3">
-                                <img src="/images/avatar.png" alt="female smiling" width="300px" height="300px" />
+                                <img src="../images/avatar.png" alt="female smiling" width="300px" height="300px" />
                             </div>
 
                             <div className="d-flex mt-5 pt-5 mb-3 justify-content-center">

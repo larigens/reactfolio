@@ -82,7 +82,7 @@ export default function Navigation({ currentPage }) {
                         <div className="carousel-item active">
                             <div className="text-center">
                                 <a href="https://bugs-diaries.herokuapp.com/">
-                                    <img src="/images/bugs-diaries.png" alt="Project 1" width="90%" />
+                                    <img src="../images/bugs-diaries.png" alt="Project 1" width="90%" />
                                 </a>
                             </div>
                             <div className="carousel-caption">
@@ -101,7 +101,7 @@ export default function Navigation({ currentPage }) {
                         <div className="carousel-item">
                             <div className="text-center">
                                 <a href="https://pawpals.herokuapp.com/">
-                                    <img src="/images/pawpals.png" alt="Project 2" width="90%" />
+                                    <img src="../images/pawpals.png" alt="Project 2" width="90%" />
                                 </a>
                             </div>
                             <div className="carousel-caption">
@@ -116,7 +116,7 @@ export default function Navigation({ currentPage }) {
                         <div className="carousel-item">
                             <div className="text-center">
                                 <a href="https://thebobfather2.github.io/carrotcalendar/">
-                                    <img src="/images/carrot-calendar.jpeg"
+                                    <img src="../images/carrot-calendar.jpeg"
                                         alt="Project 3" width="90%" />
                                 </a>
                             </div>
