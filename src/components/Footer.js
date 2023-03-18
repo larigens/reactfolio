@@ -1,18 +1,22 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBug } from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col } from 'react-bootstrap';
 
-function Footer() {
+export default function Footer() {
+    const styles = {
+        span: {
+            letterSpacing: "3px"
+        }
+    };
+
     return (
-        <>
-            <footer className="p-2 mt-5 text-center">
-                <p className="fs-smaller dark-shades text-center">Made with
-                    <FontAwesomeIcon icon={faBug} className="me-1 ms-1" /> by
-                    <span className="gradient-text fw-semibold"> Larissa Guilherme</span>
-                </p>
-            </footer>
-        </>
+        <footer className="justify-content-center pt-5 mt-5 mb-2">
+            <Container>
+                <Row>
+                    <Col className="text-center">
+                        <span className="gradient-text" style={styles.span}>&copy;Larissa Guilherme </span>
+                    </Col>
+                </Row>
+            </Container>
+        </footer>
     )
 }
-
-export default Footer;

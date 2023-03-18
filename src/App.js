@@ -1,19 +1,16 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
-
+export default function App() {
   return (
-    <div>
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+    <>
+      <Header />
       <Footer />
-    </div>
+    </>
   );
 }
-
-export default App;
