@@ -49,6 +49,7 @@ This portfolio is a showcase of the skills and abilities that I have developed t
 For questions and support feel free to contact me via:
 
 <a href="mailto:larigens@gmail.com">📧 Email </a>
+
 <a href="https://github.com/larigens">🐈‍⬛ GitHub </a>
 
 
@@ -56,13 +57,9 @@ For questions and support feel free to contact me via:
 ### Acknowledgements
 
 - [Make a README](https://www.makeareadme.com)
-
 - [W3 Schools](https://www.w3schools.com)
-
 - [MDN](https://developer.mozilla.org/en-US/)
-
 - [FrontEnd Trend](https://linktr.ee/frontend_trend)
-
 - [React Boostrap](https://react-bootstrap.github.io/getting-started/introduction/)
 
 ### Links

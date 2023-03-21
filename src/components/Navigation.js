@@ -3,63 +3,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faSquareJs, faNode, faReact, faGithub, faGit } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faCodeBranch, faCode, faBug, faBookOpen, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { Button, Container, Row, Col, Collapse } from "react-bootstrap";
-import renderAbout from '../pages/about';
-import renderPortfolio from '../pages/portfolio';
-import renderContact from '../pages/contact';
+import renderAbout from '../sections/about';
+import renderContact from '../sections/contact';
+import renderResume from '../sections/resume';
+import Project from './Project';
 
 export default function Navigation({ currentPage }) {
+    // Here we set the state variables using `useState`
+    const [fullName, setfullName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [id, setId] = useState(0);
     const [showAbout, setShowAbout] = useState(false);
-    const handleClick = () => {
-        setShowAbout(!showAbout);
-    };
-    if (currentPage === "Portfolio") {
-        return (renderPortfolio())
+
+    const handleClick = () => { setShowAbout(!showAbout) };
+
+    switch (currentPage) {
+        case 'Portfolio':
+            return <Project />
+        case 'Contact':
+            return renderContact({ fullName, setfullName, email, setEmail, message, setMessage, id, setId })
+        case 'Resume':
+            return renderResume()
+        default:
+            return renderHome()
     }
-    // else if (currentPage === "Contact") {
-    //     // Here we set the state variables using `useState`
-    //     const [fullName, setfullName] = useState("");
-    //     const [email, setEmail] = useState("");
-    //     const [message, setMessage] = useState("");
-    //     const [id, setId] = useState(0);
-    //     const handleInputChange = (e) => {
-    //         // Getting the value and name of the input which triggered the change
-    //         const { name, value } = e.target;
-    //         if (name === 'fullName') {
-    //             setfullName(value)
-    //         }
-    //         else if (name === 'email') {
-    //             setEmail(value)
-    //         }
-    //         else if (name === 'message') {
-    //             setMessage(value)
-    //         }
-    //     };
 
-    //     const handleIncrease = () => {
-    //         setId((prevId) => {
-    //             localStorage.setItem("myMessages", prevId.toString());
-    //             return prevId + 1;
-    //         });
-    //     };
-
-    //     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    //     const handleFormSubmit = (e) => {
-    //         // Preventing the default behavior of the form submit (which is to refresh the page)
-    //         e.preventDefault();
-    //         if (!emailRegex.test(email)) {
-    //             alert("Please enter a valid email address");
-    //             return;
-    //         }
-    //         handleIncrease();
-    //         // Alert the user their message was submited successfully, and clear the inputs/textarea
-    //         alert(`Thank you for your message ${fullName}!`);
-    //         setfullName('');
-    //         setEmail('');
-    //         setMessage('')
-    //     };
-    //     return (renderContact(fullName, email, message))
-    // }
-    else {
+    function renderHome() {
         return (
             <Container className="pt-4">
                 <Container className="justify-content-start mt-5 pt-5 mb-5 pb-4">
