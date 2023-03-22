@@ -15,7 +15,7 @@ export default function Header() {
                         <Navbar.Toggle aria-controls="navbarSupportedContent" />
                         <Navbar.Collapse id="navbarSupportedContent">
                             <Nav className="me-auto mb-2 mb-lg-0">
-                                <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "About" ? "gradient-text" : ""}`} href="#About" onClick={() => setCurrentPage("About")}>About Me</Nav.Link>
+                                <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "About" || currentPage === "Home" ? "gradient-text" : ""}`} href="#About" onClick={() => setCurrentPage("About")}>About Me</Nav.Link>
                                 <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "Portfolio" ? "gradient-text" : ""}`} href="#Portfolio" onClick={() => setCurrentPage("Portfolio")}>Portfolio</Nav.Link>
                             </Nav>
                             <Nav className="ms-auto mb-2 mb-lg-0 justify-content-end">

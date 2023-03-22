@@ -42,7 +42,7 @@ export default function renderAbout() {
                             </Col>
                         </Row>
                         <Row className="flex-nowrap">
-                            <Col className="card-text me-2  pb-2">
+                            <Col className="card-text me-2 pb-3">
                                 <p className="justify dark-accent fs-medium">
                                     During my leisure time, I like to play video games and workout to <span className="gradient-text"> de-stress </span> after hours of <span className="gradient-text">de-bugging</span> hah
                                 </p>
