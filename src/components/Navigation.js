@@ -10,10 +10,9 @@ import Project from './Project';
 
 export default function Navigation({ currentPage }) {
     // Here we set the state variables using `useState`
-    const [fullName, setfullName] = useState('');
+    const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [id, setId] = useState(0);
     const [showAbout, setShowAbout] = useState(false);
 
     const handleClick = () => { setShowAbout(!showAbout) };
@@ -22,7 +21,7 @@ export default function Navigation({ currentPage }) {
         case 'Portfolio':
             return <Project />
         case 'Contact':
-            return renderContact({ fullName, setfullName, email, setEmail, message, setMessage, id, setId })
+            return renderContact({ fullName, setFullName, email, setEmail, message, setMessage})
         case 'Resume':
             return renderResume()
         default:

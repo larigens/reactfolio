@@ -1,18 +1,31 @@
 import React from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 
-export default function renderContact({ fullName, setfullName, email, setEmail, message, setMessage, id, setId }) {
+export default function renderContact({ fullName, setFullName, email, setEmail, message, setMessage}) {
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
         const { name, value } = e.target;
         if (name === 'fullName') {
-            setfullName(value)
+            setFullName(value)
         }
         else if (name === 'email') {
             setEmail(value)
         }
         else if (name === 'message') {
             setMessage(value)
+        }
+    };
+
+    const handleBlur = (fieldName) => {
+        if (fieldName === "fullName" && !fullName) {
+            alert("Please enter your name!");
+            return;
+        } else if (fieldName === "email" && !email) {
+            alert("Please enter your email address!");
+            return;
+        } else if (fieldName === "message" && !message) {
+            alert("Please enter a message!");
+            return;
         }
     };
 
@@ -31,7 +44,7 @@ export default function renderContact({ fullName, setfullName, email, setEmail, 
         else {
             // Alert the user their message was submited successfully, and clear the inputs/textarea
             alert(`Thank you for your message ${fullName}!`);
-            setfullName('');
+            setFullName('');
             setEmail('');
             setMessage('')
         }
@@ -42,7 +55,7 @@ export default function renderContact({ fullName, setfullName, email, setEmail, 
                 <h2 className="display-4 text-center gradient-text fw-bold heading-font mt-2">Contact Me</h2>
             </Container>
             <Container className='justify-content-center'>
-                <Form id="contact" name="newMessage" method="post" action="newMessage" className="card-body cardbody-color p-lg-2">
+                <Form id="contact" name="newMessage" method="post" action="newMessage" className="card-body cardbody-color p-lg-2" >
                     <Form.Group className="mb-4">
                         <Form.Control
                             value={fullName}
@@ -51,6 +64,7 @@ export default function renderContact({ fullName, setfullName, email, setEmail, 
                             type="text"
                             placeholder="Name"
                             required
+                            onBlur={(e) => handleBlur(e.target.name)}
                         />
                     </Form.Group>
                     <Form.Group className="mb-4">
@@ -61,6 +75,7 @@ export default function renderContact({ fullName, setfullName, email, setEmail, 
                             type="email"
                             placeholder="Email Address"
                             required
+                            onBlur={(e) => handleBlur(e.target.name)}
                         />
                     </Form.Group>
                     <Form.Group className="mb-4">
@@ -71,6 +86,7 @@ export default function renderContact({ fullName, setfullName, email, setEmail, 
                             as="textarea"
                             rows={6}
                             required
+                            onBlur={(e) => handleBlur(e.target.name)}
                         />
                     </Form.Group>
                     <div className="d-flex justify-content-center mt-1">
