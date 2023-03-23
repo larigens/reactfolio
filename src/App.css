@@ -34,14 +34,15 @@ header {
 }
 
 /* Ensures that the main content takes up at least the full height of the page. */
-main {
-  min-height: calc(100% - 3em) !important;
-  /* 3em is the height of the footer */
+.main {
+  min-height: calc(100%-5em) !important;
+  /* 5em is the height of the footer */
+  margin-bottom: 10rem;
 }
 
 /* This ensures that the footer always stays at the bottom of the page, regardless of the height of the main content. */
 footer {
-  height: 3em !important;
+  height: 5em !important;
 }
 
 /* Colors */
@@ -153,6 +154,10 @@ input::placeholder {
   border-radius: 15px;
 }
 
+.radius-100 {
+  border-radius: 100%;
+}
+
 input,
 textarea {
   border: 2px solid var(--main-brand) !important;
@@ -186,12 +191,6 @@ textarea {
   margin: 0 auto 36px auto !important;
 }
 
-.typing-slow {
-  animation:
-    typing 6.5s steps(40, end);
-  margin: 0 auto 12px auto !important;
-}
-
 /* Controls the intermediate steps in the animation sequence */
 @keyframes typing {
   from {
@@ -216,13 +215,14 @@ textarea {
 .card-face {
   /* Motion effect timing */
   transition: .5s !important;
-  width: 160px !important;
-  height: 100px !important;
+  width: 100px !important;
+  height: 80px !important;
 }
 
 .card-face.face1 {
   /* Put face 1 on the front */
   z-index: 1 !important;
+  transform: translateY(0px) !important;
 }
 
 .card-face.face1,
@@ -243,7 +243,7 @@ textarea {
 }
 
 .card-content a:hover {
-  background: var(--gradient) !important;
+  font-weight: 800;
 }
 
 .contact-container .contact-card .card-face.face2 .card-content a:hover {
@@ -252,7 +252,7 @@ textarea {
 
 .card-face.face2 {
   /* Makes face 1 cover face 2 */
-  transform: translateY(-100px) !important;
+  transform: translateY(-80px) !important;
   box-shadow: 0 4px 10px var(--light-accent) !important;
 }
 
@@ -264,5 +264,4 @@ textarea {
 
 .card-content a {
   margin: 8px auto !important;
-  outline: 1px dashed var(--light-accent) !important;
 }

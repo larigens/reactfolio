@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-export default function renderAbout() {
+export default function About() {
 
     const styles = {
         card: {
@@ -20,8 +20,8 @@ export default function renderAbout() {
                     <Card.Title className="display-4 text-center gradient-text fw-semibold heading-font mt-2">About Me</Card.Title>
                 </Card.Body>
                 <Row className="d-flex justify-content-center ms-2 mb-2">
-                    <Col md={11} className="me-2 mb-3">
-                        <Row className="flex-nowrap">
+                    <Col xs={12} md={11} className="me-2 mb-3">
+                        <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify dark-accent fs-medium">
                                     Raised on the coast of Brazil, I relocated to the US in 2020 and since then, technology has been my calling.
@@ -31,7 +31,7 @@ export default function renderAbout() {
                                 </p>
                             </Col>
                         </Row>
-                        <Row className="flex-nowrap">
+                        <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify dark-accent fs-medium">
                                     In my pursuit of honing my craft, I challenge myself to constantly improve, and welcome any feedback or advice that could help me reach my goals.
@@ -41,7 +41,7 @@ export default function renderAbout() {
                                 </p>
                             </Col>
                         </Row>
-                        <Row className="flex-nowrap">
+                        <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify dark-accent fs-medium">
                                     During my leisure time, I like to play video games and workout to <span className="gradient-text"> de-stress </span> after hours of <span className="gradient-text">de-bugging</span> hah
@@ -49,13 +49,13 @@ export default function renderAbout() {
                             </Col>
                         </Row>
                         <Row className="d-flex justify-content-center ms-4 me-4 mb-3 mt-4">
-                            <Col className="fs-4 card-text me-2 mt-3 gradient-text fs-medium" style={styles.cardTextSpc}>
+                            <Col xs={12} className="fs-4 card-text me-2 mt-3 gradient-text fs-medium text-center" style={styles.cardTextSpc}>
                                 Create. Code. Design. Debug. Play. Workout. Have Fun !important;
                             </Col>
                         </Row>
                     </Col>
                 </Row>
             </Card>
-        </Container>
+        </Container>    
     )
 }
