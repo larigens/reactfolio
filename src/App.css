@@ -155,7 +155,7 @@ input::placeholder {
 
 input,
 textarea {
-  background-color: var(--light) !important;
+  border: 2px solid var(--main-brand) !important;
 }
 
 .card {
@@ -216,15 +216,13 @@ textarea {
 .card-face {
   /* Motion effect timing */
   transition: .5s !important;
-  width: 200px !important;
-  height: 140px !important;
+  width: 160px !important;
+  height: 100px !important;
 }
 
 .card-face.face1 {
   /* Put face 1 on the front */
   z-index: 1 !important;
-  /* Makes face 1 cover face 2 */
-  transform: translateY(40px) !important;
 }
 
 .card-face.face1,
@@ -235,7 +233,7 @@ textarea {
 .contact-card:hover .card-face.face1,
 .contact-card:hover .card-face.face2 {
   /* Makes it go up to show face 2 */
-  transform: translateY(0) !important;
+  transform: translateY(10px) !important;
   box-shadow: 0 2px 20px var(--light-accent) !important;
 }
 

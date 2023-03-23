@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { skills } from '../data/skills';
+import skills from '../../data/skills.json';
 
 export default function renderResume() {
     return (
@@ -21,7 +21,7 @@ export default function renderResume() {
                                     </Card.Title>
                                 </Card.Body>
                                 <ListGroup variant="flush" className="background-shades list-group-flush border-0 text-center m-2">
-                                    {skill.skillsArr.map((item) => (
+                                    {skill.skills.map((item) => (
                                         <ListGroup.Item className='dark-accent border-bottom-0'>{item}</ListGroup.Item>
                                     ))}
                                 </ListGroup>

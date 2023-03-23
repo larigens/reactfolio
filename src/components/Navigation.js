@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faSquareJs, faNode, faReact, faGithub, faGit } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faCodeBranch, faCode, faBug, faBookOpen, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { Button, Container, Row, Col, Collapse } from "react-bootstrap";
-import renderAbout from '../sections/about';
-import renderContact from '../sections/contact';
-import renderResume from '../sections/resume';
-import Project from './Project';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Portfolio from './Portfolio';
 
 export default function Navigation({ currentPage }) {
     // Here we set the state variables using `useState`
@@ -19,11 +19,11 @@ export default function Navigation({ currentPage }) {
 
     switch (currentPage) {
         case 'Portfolio':
-            return <Project />
+            return <Portfolio />
         case 'Contact':
-            return renderContact({ fullName, setFullName, email, setEmail, message, setMessage})
+            return <Contact fullName={fullName} setFullName={setFullName} email={email} setEmail={setEmail} message={message} setMessage={setMessage} />
         case 'Resume':
-            return renderResume()
+            return Resume()
         default:
             return renderHome()
     }
@@ -60,7 +60,7 @@ export default function Navigation({ currentPage }) {
                     </Row>
                 </Container>
                 <Collapse in={showAbout}>
-                    <Container>{renderAbout()}</Container>
+                    <Container>{About()}</Container>
                 </Collapse>
                 <Container className="ms-4 pt-5">
                     <Row className="mt-5 pt-5 mb-1">
