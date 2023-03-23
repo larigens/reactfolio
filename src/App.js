@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
 import Header from './components/Header';
-import NavigationBar from './components/NavigationBar';
 import Navigation from './components/Navigation';
+import Main from './components/Main';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -15,9 +15,9 @@ export default function App() {
   return (
     <>
       <Header>
-        <NavigationBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </Header>
-      <Navigation currentPage={currentPage} />
+      <Main currentPage={currentPage} />
       <Footer />
     </>
   );

@@ -9,7 +9,7 @@ export default function Home({ handleClick }) {
                 <Col md={12} className="ms-5 ps-4">
                     <Row className="justify-content-center align-items-center">
                         <Col md={3} className="text-end">
-                            <img src="../images/avatar.png" alt="female smiling" className="img-fluid" />
+                            <img src="../../images/avatar.png" alt="female smiling" className="img-fluid" />
                         </Col>
                         <Col md={9} className="align-items-center">
                             <Row className="me-5">
