@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import Project from '../Project';
-import projects from '../../data/projects.json';
+import {projects} from '../../data/projects.js';
 
 export default function Portfolio() {
 

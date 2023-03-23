@@ -1,6 +1,14 @@
 import { Container, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowsTurnRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import  bugsDiaries from '../images/bugs-diaries.png';
+import  carrotCalendar  from '../images/carrot-calendar.png';
+import chronos from '../images/chronos.png';
+import  noter from '../images/noter.png';
+import  pawpals from '../images/pawpals.png';
+import  voyage from '../images/voyage.png';
+
+
 
 export default function Project({ project }) {
     return (

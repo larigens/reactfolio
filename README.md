@@ -29,7 +29,7 @@
 ---
 ## Description
 
-Highly motivated and results-driven Full Stack Web Developer, passionate about designing and developing efficient, user-friendly, and responsive web applications. Throughout my studies, I have gained hands-on experience with various programming languages, frameworks, and tools, including HTML, CSS, JavaScript, React, Node.js, and MongoDB, among others. 
+Highly motivated and results-driven Full Stack Web Developer, passionate about designing and developing efficient, user-friendly, and responsive web applications. Throughout my studies, I have gained hands-on experience with various programming languages, frameworks, tools, and databases including HTML, CSS, JavaScript, React, Node.js, Express.js, MySQL, and MongoDB, among others. 
 
 I am a quick learner, an effective problem solver, and a strong communicator, and I am excited about the opportunities that lie ahead in this dynamic and constantly evolving field.
 

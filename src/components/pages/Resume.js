@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import skills from '../../data/skills.json';
+import resume from '../../pdf/Resume.pdf';
 
 export default function Resume() {
     return (
@@ -31,7 +32,7 @@ export default function Resume() {
                 </Row>
             </Container>
             <Container className="mt-auto text-center">
-                <Button href="../../pdf/Resume.pdf" download className="gradient shades body-font width-20 no-border fs-5 fw-semibold">
+                <Button href={resume} download className="gradient shades body-font width-20 no-border fs-5 fw-semibold">
                     <FontAwesomeIcon icon={faDownload} className="fs-3 me-1" /> Resume
                 </Button>
             </Container>
