@@ -1,15 +1,23 @@
 {
   "files": {
     "main.css": "/reactfolio/static/css/main.20611e9b.css",
-    "main.js": "/reactfolio/static/js/main.62c7b6d6.js",
+    "main.js": "/reactfolio/static/js/main.edae0d1f.js",
     "static/js/787.612b19a2.chunk.js": "/reactfolio/static/js/787.612b19a2.chunk.js",
+    "static/media/pawpals.png": "/reactfolio/static/media/pawpals.d3ed90dac0a3d78fb57d.png",
+    "static/media/voyage.png": "/reactfolio/static/media/voyage.d61916f5849d4e70642e.png",
+    "static/media/chronos.png": "/reactfolio/static/media/chronos.b06eaab4eb6e7c1a40ff.png",
+    "static/media/carrot-calendar.png": "/reactfolio/static/media/carrot-calendar.757a6b95486aa6b712b7.png",
+    "static/media/bugs-diaries.png": "/reactfolio/static/media/bugs-diaries.a14bd75c34acbcf73103.png",
+    "static/media/avatar.png": "/reactfolio/static/media/avatar.23e03b7bdec61d42a395.png",
+    "static/media/noter.png": "/reactfolio/static/media/noter.730e126f0bb719ac3e9f.png",
+    "static/media/Resume.pdf": "/reactfolio/static/media/Resume.23e85b32c68b630bb6c7.pdf",
     "index.html": "/reactfolio/index.html",
     "main.20611e9b.css.map": "/reactfolio/static/css/main.20611e9b.css.map",
-    "main.62c7b6d6.js.map": "/reactfolio/static/js/main.62c7b6d6.js.map",
+    "main.edae0d1f.js.map": "/reactfolio/static/js/main.edae0d1f.js.map",
     "787.612b19a2.chunk.js.map": "/reactfolio/static/js/787.612b19a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20611e9b.css",
-    "static/js/main.62c7b6d6.js"
+    "static/js/main.edae0d1f.js"
   ]
 }
