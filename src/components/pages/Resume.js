@@ -31,7 +31,7 @@ export default function Resume() {
                 </Row>
             </Container>
             <Container className="mt-auto text-center">
-                <Button href="../pdf/Resume.pdf" download className="gradient shades body-font width-20 no-border fs-5 fw-semibold">
+                <Button href="../../pdf/Resume.pdf" download className="gradient shades body-font width-20 no-border fs-5 fw-semibold">
                     <FontAwesomeIcon icon={faDownload} className="fs-3 me-1" /> Resume
                 </Button>
             </Container>
