@@ -1,9 +1,9 @@
-import bugsDiaries from '../images/bugs-diaries.png';
-import carrotCalendar from '../images/carrot-calendar.png';
-import chronos from '../images/chronos.png';
-import noter from '../images/noter.png';
-import pawpals from '../images/pawpals.png';
-import voyage from '../images/voyage.png';
+import bugsDiaries from '../assets/images/bugs-diaries.png';
+import carrotCalendar from '../assets/images/carrot-calendar.png';
+import chronos from '../assets/images/chronos.png';
+import noter from '../assets/images/noter.png';
+import pawpals from '../assets/images/pawpals.png';
+import voyage from '../assets/images/voyage.png';
 
 export const projects = [
     {

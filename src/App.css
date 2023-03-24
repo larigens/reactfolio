@@ -7,7 +7,7 @@
   --main-brand: #a1387c;
   --light-accent: #e94893;
   --light-shades: #fb6f92;
-  --light: #f9e5f9;
+  --light: #f7e8f7;
   --gradient: -webkit-linear-gradient(45deg, var(--dark-accent), var(--main-brand), var(--light-accent), var(--main-brand), var(--dark-accent));
   --heading: 'Shantell Sans', cursive;
   --body: 'Montserrat', sans-serif;
@@ -148,6 +148,10 @@ input::placeholder {
 .no-border {
   border: none !important;
   outline: none !important;
+}
+
+.radius-5 {
+  border-radius: 5px;
 }
 
 .radius-15 {

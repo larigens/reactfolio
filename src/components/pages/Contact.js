@@ -70,6 +70,7 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
             <Container className='d-flex justify-content-center'>
                 <Col xs={12} md={8} lg={6}>
                     <Card className='w-100 justify-content-center p-4 background-shades'>
+                        <h4 className='main-brand heading-font text-center'>Please complete the form below:</h4>
                         <Form id="contact" name="newMessage" method="post" action="newMessage" className="card-body cardbody-color p-lg-2" >
                             <Form.Group className="mb-4">
                                 <Form.Control
@@ -102,6 +103,7 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
                                     onChange={handleInputChange}
                                     as="textarea"
                                     rows={6}
+                                    placeholder="I am contacting you because..."
                                     required
                                     className='background-shades'
                                     onBlur={(e) => handleBlur(e.target.name)}
@@ -118,12 +120,12 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
             </Container>
 
             <Modal show={showModal} onHide={handleCloseModal}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{modalTitle}</Modal.Title>
+                <Modal.Header closeButton className='background-shades no-border'>
+                    <Modal.Title className='gradient-text heading-font fs-3'>{modalTitle}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>{modalBody}</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseModal}>
+                <Modal.Body className='background-shades no-border main-brand fw-semibold'>{modalBody}</Modal.Body>
+                <Modal.Footer className='background-shades no-border'>
+                    <Button className='gradient no-border radius-15' onClick={handleCloseModal}>
                         Close
                     </Button>
                 </Modal.Footer>

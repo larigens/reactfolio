@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import skills from '../../data/skills.json';
-import resume from '../../pdf/Resume.pdf';
+import { faDownload, faEye } from '@fortawesome/free-solid-svg-icons';
+import { skills } from '../../data/skills.js';
+import resume from '../../assets/pdf/Resume.pdf';
 
 export default function Resume() {
     return (
@@ -32,8 +32,11 @@ export default function Resume() {
                 </Row>
             </Container>
             <Container className="mt-auto text-center">
-                <Button href={resume} download className="gradient shades body-font width-20 no-border fs-5 fw-semibold">
-                    <FontAwesomeIcon icon={faDownload} className="fs-3 me-1" /> Resume
+                <Button href={resume} download className="gradient shades body-font width-20 no-border fs-5 fw-semibold m-3">
+                    <FontAwesomeIcon icon={faDownload} className="fs-4 me-1" /> Resume
+                </Button>
+                <Button href="https://bold.pro/my/lari-gui" target="_blank" rel="noreferrer" download className="gradient shades body-font width-20 no-border fs-5 fw-semibold m-3">
+                    <FontAwesomeIcon icon={faEye} className="fs-4 me-1" /> Resume
                 </Button>
             </Container>
         </Container>

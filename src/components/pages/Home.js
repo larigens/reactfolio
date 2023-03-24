@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { Button, Container, Row, Col } from "react-bootstrap";
-import  avatar  from '../../images/avatar.png'
+import  avatar  from '../../assets/images/avatar.png'
 
 export default function Home({ handleClick }) {
     return (
