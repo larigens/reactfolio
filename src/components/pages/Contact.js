@@ -1,5 +1,5 @@
-import React from 'react';
-import { Form, Button, Container, Card, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Form, Button, Container, Card, Col, Modal } from 'react-bootstrap';
 
 export default function Contact({ fullName, setFullName, email, setEmail, message, setMessage }) {
     const handleInputChange = (e) => {
@@ -16,16 +16,28 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
         }
     };
 
+    const [showModal, setShowModal] = useState(false);
+    const [modalTitle, setModalTitle] = useState('');
+    const [modalBody, setModalBody] = useState('');
+
+    const handleCloseModal = () => setShowModal(false);
+
+    const handleShowModal = (title, body) => {
+        setModalTitle(title);
+        setModalBody(body);
+        setShowModal(true);
+    };
+
     const handleBlur = (fieldName) => {
         if (fieldName === "fullName" && !fullName) {
-            alert("Please enter your name!");
+            handleShowModal("Error", "Please enter your name!");
             return;
         } else if (fieldName === "email" && !email) {
-            alert("Please enter your email address!");
+            handleShowModal("Error", "Please enter your email address!");
             return;
         } else if (fieldName === "message" && !message) {
-            alert("Please enter a message!");
-            return;
+            handleShowModal("Error", "Please enter a message!");
+            return
         }
     };
 
@@ -34,21 +46,22 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
         if (!emailRegex.test(email)) {
-            alert("Please enter a valid email address");
+            handleShowModal("Error", "Please enter a valid email address!");
             return;
         }
         else if (!fullName || !email || !message) {
-            alert("Please fill in all required fields");
+            handleShowModal("Error", "Please fill in all required fields!");
             return;
         }
         else {
             // Alert the user their message was submited successfully, and clear the inputs/textarea
-            alert(`Thank you for your message ${fullName}!`);
+            handleShowModal(`Thank you ${fullName}!`, "I received your message and will respond within 24 hours!");
             setFullName('');
             setEmail('');
             setMessage('')
         }
     };
+
     return (
         <Container className='main'>
             <Container className="d-flex justify-content-center mt-5 pt-3 mb-4">
@@ -103,6 +116,19 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
                     </Card>
                 </Col>
             </Container>
-        </Container>      
-    ) 
+
+            <Modal show={showModal} onHide={handleCloseModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{modalTitle}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{modalBody}</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseModal}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+        </Container>
+    )
 } 

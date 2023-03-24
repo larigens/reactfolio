@@ -13,7 +13,7 @@ export const projects = [
         link: "https://bugs-diaries.herokuapp.com/",
         image: bugsDiaries
     },
-    {
+    {  
         title: "Paw Pals",
         description: "Help find loving homes for animals in need.",
         repository: "https://github.com/thebobfather2/pawpals",
