@@ -39,7 +39,7 @@ export default function Footer() {
                             </Container>
                         </Container>
                         <Container className="d-flex justify-content-center align-items-center card-face face2 radius-100">
-                            <Container className="card-content text-center me-1">
+                            <Container className="card-content text-center me-2">
                                 <a href="https://www.linkedin.com/in/lari-gui/" target="_blank" rel="noreferrer" type="button" className="light-accent fs-small pt-2 pb-2 gradient-hv text-center">
                                     Connect</a>
                             </Container>

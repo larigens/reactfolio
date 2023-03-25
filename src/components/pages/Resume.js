@@ -17,13 +17,15 @@ export default function Resume() {
                         <Col key={skill.name} className="mb-4">
                             <Card className="h-100 background-shades">
                                 <Card.Body className="d-flex flex-column justify-content-between">
-                                    <Card.Title className="text-center gradient-text fw-bolder fs-5 mb-4">
+                                    <Card.Title className="text-center light-shades fw-bolder fs-5 mb-4">
                                         {skill.name}
                                     </Card.Title>
                                     <ListGroup variant="flush" className="list-group-flush border-0 text-center m-2">
+                                        <Container className='background-main radius-15'>
                                         {skill.skills.map((item) => (
-                                            <ListGroup.Item key={item} className='dark-accent background-shades border-bottom-0'>{item}</ListGroup.Item>
+                                            <ListGroup.Item as="li" key={item} className='no-border background-main'>{item}</ListGroup.Item>
                                         ))}
+                                        </Container>
                                     </ListGroup>
                                 </Card.Body>
                             </Card>
@@ -32,10 +34,10 @@ export default function Resume() {
                 </Row>
             </Container>
             <Container className="mt-auto text-center">
-                <Button href={resume} download className="gradient shades body-font width-20 no-border fs-5 fw-semibold m-3">
+                <Button href={resume} download className="background-gradient light body-font width-20 no-border fs-5 fw-semibold m-3">
                     <FontAwesomeIcon icon={faDownload} className="fs-4 me-1" /> Resume
                 </Button>
-                <Button href="https://bold.pro/my/lari-gui" target="_blank" rel="noreferrer" download className="gradient shades body-font width-20 no-border fs-5 fw-semibold m-3">
+                <Button href="https://bold.pro/my/lari-gui" target="_blank" rel="noreferrer" download className="background-gradient light body-font width-20 no-border fs-5 fw-semibold m-3">
                     <FontAwesomeIcon icon={faEye} className="fs-4 me-1" /> Resume
                 </Button>
             </Container>

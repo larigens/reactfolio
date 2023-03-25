@@ -23,7 +23,7 @@ export default function About() {
                     <Col xs={12} md={11} className="me-2 mb-3">
                         <Row>
                             <Col className="card-text me-2 pb-3">
-                                <p className="justify dark-accent fs-medium">
+                                <p className="justify light-accent fs-medium">
                                     Raised on the coast of Brazil, I relocated to the US in 2020 and since then, technology has been my calling.
                                     I believe that <span className="gradient-text">coding</span> was destined to choose me, as I take pleasure in
                                     learning new tricks and tools that simplify both my work and daily life. My journey as a software engineer
@@ -33,7 +33,7 @@ export default function About() {
                         </Row>
                         <Row>
                             <Col className="card-text me-2 pb-3">
-                                <p className="justify dark-accent fs-medium">
+                                <p className="justify light-accent fs-medium">
                                     In my pursuit of honing my craft, I challenge myself to constantly improve, and welcome any feedback or advice that could help me reach my goals.
                                     Currently, I'm working on a personal project, Bugs Diaries, a website that allows writers to publish, edit, and manage their articles
                                     about the latest information on technology trends, best practices, and emerging technologies. My aim is to inspire future programmers by passing on the knowledge.
@@ -43,7 +43,7 @@ export default function About() {
                         </Row>
                         <Row>
                             <Col className="card-text me-2 pb-3">
-                                <p className="justify dark-accent fs-medium">
+                                <p className="justify light-accent fs-medium">
                                     During my leisure time, I like to play video games and workout to <span className="gradient-text"> de-stress </span> after hours of <span className="gradient-text">de-bugging</span> hah
                                 </p>
                             </Col>

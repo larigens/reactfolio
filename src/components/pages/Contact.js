@@ -68,9 +68,9 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
                 <h2 className="display-4 text-center gradient-text fw-bold heading-font mt-2">Contact Me</h2>
             </Container>
             <Container className='d-flex justify-content-center'>
-                <Col xs={12} md={8} lg={6}>
+                <Col xs={12} md={8} lg={6} className="justify-content-center">
                     <Card className='w-100 justify-content-center p-4 background-shades'>
-                        <h4 className='main-brand heading-font text-center'>Please complete the form below:</h4>
+                        <h4 className='main-brand heading-font text-center mb-4'>Please complete the form below:</h4>
                         <Form id="contact" name="newMessage" method="post" action="newMessage" className="card-body cardbody-color p-lg-2" >
                             <Form.Group className="mb-4">
                                 <Form.Control
@@ -110,7 +110,7 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
                                 />
                             </Form.Group>
                             <Container className="d-flex justify-content-center mt-1">
-                                <Button type="button" className="gradient light no-border ps-3 pe-3 d-flex justify-content-center radius-15 flex-nowrap mb-2 mt-4 width-20" onClick={handleFormSubmit}>
+                                <Button type="button" className="background-gradient fs-5 light no-border ps-3 pe-3 d-flex justify-content-center radius-15 flex-nowrap mb-2 mt-4 width-20" onClick={handleFormSubmit}>
                                     Submit
                                 </Button>
                             </Container>
@@ -121,11 +121,11 @@ export default function Contact({ fullName, setFullName, email, setEmail, messag
 
             <Modal show={showModal} onHide={handleCloseModal}>
                 <Modal.Header closeButton className='background-shades no-border'>
-                    <Modal.Title className='gradient-text heading-font fs-3'>{modalTitle}</Modal.Title>
+                    <Modal.Title className='gradient-dark heading-font fs-3'>{modalTitle}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body className='background-shades no-border main-brand fw-semibold'>{modalBody}</Modal.Body>
+                <Modal.Body className='background-shades no-border light-shades fw-semibold fs-medium'>{modalBody}</Modal.Body>
                 <Modal.Footer className='background-shades no-border'>
-                    <Button className='gradient no-border radius-15' onClick={handleCloseModal}>
+                    <Button className='background-gradient no-border radius-15' onClick={handleCloseModal}>
                         Close
                     </Button>
                 </Modal.Footer>

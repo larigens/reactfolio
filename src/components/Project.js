@@ -15,15 +15,15 @@ export default function Project({ project }) {
                 </Col>
                 <Col lg={6}>
                     <Container className="text-center text-lg-start">
-                        <h3 className="gradient-text fw-bold">{project.title}</h3>
-                        <p className="light-accent fw-semibold">{project.description}</p>
+                        <h3 className="gradient-text fw-semibold">{project.title}</h3>
+                        <p className="light-accent">{project.description}</p>
                         <Container className="mb-3">
                             <FontAwesomeIcon icon={faArrowsTurnRight} className="fs-5 main-brand me-2" />
-                            <a href={project.repository} target="_blank" rel="noreferrer" className="light-accent fw-bold gradient-hv"> Check GitHub Repository </a>
+                            <a href={project.repository} target="_blank" rel="noreferrer" className="dark-accent gradient-hv"> Check GitHub Repository </a>
                         </Container>
                         <Container className="mb-3">
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fs-5 main-brand me-2" />
-                            <a href={project.link} target="_blank" rel="noreferrer" className="light-accent fw-bold gradient-hv"> Check out Website </a>
+                            <a href={project.link} target="_blank" rel="noreferrer" className="dark-accent gradient-hv"> Check out Website </a>
                         </Container>
                     </Container>
                 </Col>

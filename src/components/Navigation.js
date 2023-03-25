@@ -1,6 +1,4 @@
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navigation({ currentPage, setCurrentPage }) {
     return (
@@ -13,7 +11,6 @@ export default function Navigation({ currentPage, setCurrentPage }) {
                         <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "About" || currentPage === "Home" ? "gradient-text" : ""}`} href="#About" onClick={() => setCurrentPage("About")}>About Me</Nav.Link>
                         <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "Portfolio" ? "gradient-text" : ""}`} href="#Portfolio" onClick={() => setCurrentPage("Portfolio")}>Portfolio</Nav.Link>
                     </Nav>          
-                         <FontAwesomeIcon icon={faLaptopCode} className="fs-4 mt-2 light-accent" />
                     <Nav className="ms-auto mb-2 mb-lg-0 justify-content-end">
                         <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "Contact" ? "gradient-text" : ""}`} href="#Contact" onClick={() => setCurrentPage("Contact")}>Contact Me</Nav.Link>
                         <Nav.Link className={`nav-link light-shades gradient-hv mt-2 fs-5 fw-semibold ${currentPage === "Resume" ? "gradient-text" : ""}`} href="#Resume" onClick={() => setCurrentPage("Resume")}>Resume</Nav.Link>
