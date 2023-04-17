@@ -4,8 +4,16 @@ import chronos from '../assets/images/chronos.png';
 import noter from '../assets/images/noter.png';
 import pawpals from '../assets/images/pawpals.png';
 import voyage from '../assets/images/voyage.png';
+import finWiz from '../assets/images/finwiz.png';
 
 export const projects = [
+    {
+        title: "FinWiz",
+        description: "Factoring software designed to simplify the management of accounts receivables and payables.",
+        repository: "https://github.com/larigens/finwiz",
+        link: "https://finwiz.herokuapp.com/",
+        image: finWiz
+    },
     {
         title: "Bugs Diaries",
         description: "Blog that allows writers to publish, edit, and manage their articles.",
