@@ -2,20 +2,21 @@
 
 /* Pseudo-class that matches the root element of the document. */
 :root {
-  --shades: #d9cad9;
-  --dark-accent: #5e207a;
-  --main-brand: #a1387c;
-  --light-accent: #e94893;
-  --light-shades: #fb6f92;
-  --light: #f9e5f9;
+  --dark-shades: #070214;
+  --dark-accent: #7063B5;
+  --main-brand: #BF79A6;
+  --light-accent: #8A9DCB;
+  --light-shades: #f2cef2;
+  --light: #F0E6F0;
   --gradient: -webkit-linear-gradient(45deg, var(--dark-accent), var(--main-brand), var(--light-accent), var(--main-brand), var(--dark-accent));
+  --gradient-dark: -webkit-linear-gradient(45deg, var(--dark-accent), var(--main-brand), var(--dark-accent), var(--dark-accent));
   --heading: 'Shantell Sans', cursive;
   --body: 'Montserrat', sans-serif;
 }
 
 body,
 .background-shades {
-  background-color: var(--shades) !important;
+  background-color: var(--dark-shades) !important;
 }
 
 body {
@@ -50,17 +51,30 @@ footer {
   background: var(--light-shades) !important;
 }
 
+.background-main {
+  background: var(--main-brand) !important;
+}
+
 /* Displays smooth transitions between the three specified colors - The linear gradient goes diagonally as defined by the 45 degrees */
 .gradient {
   background: var(--gradient) !important;
 }
 
+.background-gradient {
+  background: var(--gradient-dark);
+}
+
 .gradient-dark {
-  background: var(--gradient-dark) !important;
+  background: var(--gradient-dark);
+  /* Need to set that is a text you are removing the background / color or the gradient won't work */
+  -webkit-background-clip: text;
+  background-clip: none;
+  /* Text-fill needs to be transparent to show the gradient */
+  -webkit-text-fill-color: transparent;
 }
 
 .shades {
-  color: var(--shades) !important;
+  color: var(--dark-shades) !important;
 }
 
 .dark-accent,
@@ -150,6 +164,10 @@ input::placeholder {
   outline: none !important;
 }
 
+.radius-5 {
+  border-radius: 5px;
+}
+
 .radius-15 {
   border-radius: 15px;
 }
@@ -166,7 +184,7 @@ textarea {
 
 .card {
   border-radius: 20px !important;
-  box-shadow: 0 3px 9px 2px var(--main-brand) !important;
+  box-shadow: 0 4px 9px 4px var(--main-brand) !important;
 }
 
 textarea {
@@ -201,12 +219,6 @@ textarea {
   to {
     width: 100%
   }
-}
-
-/* Inverts the color of the arrow icon and make it darker. */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
 }
 
 .contact-container {
@@ -248,7 +260,7 @@ textarea {
 }
 
 .contact-container .contact-card .card-face.face2 .card-content a:hover {
-  color: var(--shades) !important;
+  color: var(--dark-shades) !important;
 }
 
 .card-face.face2 {

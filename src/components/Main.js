@@ -5,7 +5,6 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
-import Icons from './Icons';
 
 export default function Main({ currentPage }) {
     // Here we set the state variables using `useState`
@@ -36,7 +35,6 @@ export default function Main({ currentPage }) {
                         <About />
                     </Container>
                 </Collapse>
-                <Icons />
             </Container>
         )
     }

@@ -9,19 +9,19 @@
 </p>
 
 <p align="center">
-  <a href="/"><strong>Larissa Guilherme</strong></a>
+  <a href="https://larigens.github.io/reactfolio"><strong>Larissa Guilherme</strong></a>
 </p>
 <br>
 </p>
 
 <div align="center">
 
-![Forks](https://img.shields.io/github/forks/larigens/reactfolio?style=flat-square&color=9cf)
-![Stars](https://img.shields.io/github/stars/larigens/reactfolio?style=flat-square&color=9cf)
-![License](https://img.shields.io/github/license/larigens/reactfolio?style=flat-square&color=9cf)
-![Contributors](https://img.shields.io/github/contributors/larigens/reactfolio?style=flat-square&color=9cf)
-![Issues](https://img.shields.io/github/issues/larigens/reactfolio?style=flat-square&color=9cf)
-![React](https://img.shields.io/badge/-React-61dafb?style=flat-square&logo=react&logoColor=white&color=9cf)
+![Forks](https://img.shields.io/github/forks/larigens/reactfolio?style=flat-square&color=blueviolet)
+![Stars](https://img.shields.io/github/stars/larigens/reactfolio?style=flat-square&color=blueviolet)
+![License](https://img.shields.io/github/license/larigens/reactfolio?style=flat-square&color=blueviolet)
+![Contributors](https://img.shields.io/github/contributors/larigens/reactfolio?style=flat-square&color=blueviolet)
+![Issues](https://img.shields.io/github/issues/larigens/reactfolio?style=flat-square&color=blueviolet)
+![React](https://img.shields.io/badge/-React-61dafb?style=flat-square&logo=react&logoColor=white&color=blueviolet)
 
 
 </div>
@@ -29,11 +29,9 @@
 ---
 ## Description
 
-Highly motivated and results-driven Full Stack Web Developer, passionate about designing and developing efficient, user-friendly, and responsive web applications. Throughout my studies, I have gained hands-on experience with various programming languages, frameworks, and tools, including HTML, CSS, JavaScript, React, Node.js, and MongoDB, among others. 
+Committed to continuous learning and recently completed a rigorous Full Stack Web Development Bootcamp to gain hands-on experience in HTML, CSS, JavaScript, and other web development technologies. Excited to contribute to dynamic teams, collaborate with colleagues, and deliver high-quality web applications that meet client needs.
 
-I am a quick learner, an effective problem solver, and a strong communicator, and I am excited about the opportunities that lie ahead in this dynamic and constantly evolving field.
-
-This portfolio is a showcase of the skills and abilities that I have developed throughout the bootcamp.
+This portfolio is a showcase of the skills and abilities.
 
 ## Table of Contents
 - [Description](#description)
