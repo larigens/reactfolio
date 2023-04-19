@@ -20,5 +20,5 @@ export default function App() {
       <Main currentPage={currentPage} />
       <Footer />
     </>
-  );
+  )
 }
