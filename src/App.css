@@ -179,6 +179,7 @@ input::placeholder {
 input,
 textarea {
   border: 2px solid var(--main-brand) !important;
+  box-shadow: 0 2px 3px 2px var(--main-brand) !important;
 }
 
 .card {
