@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { Button, Container, Row, Col } from "react-bootstrap";
-import  avatar  from '../../assets/images/avatar.png'
+import avatar from '../../assets/images/avatar.png'
 
 export default function Home({ handleClick }) {
     return (
@@ -20,7 +20,7 @@ export default function Home({ handleClick }) {
                             </Row>
                             <Row className="text-justify w-75">
                                 <p className="light-accent fs-5">
-                                    I am an aspiring Software Developer living in Atlanta, GA and currently studying Full-Stack Web Development at Georgia Tech.
+                                    I am a skilled software web developer based in Atlanta, GA.
                                 </p>
                             </Row>
                             <Row className="justify-content-start text-justify w-75 mt-5">

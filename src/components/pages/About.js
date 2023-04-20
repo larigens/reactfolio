@@ -24,21 +24,14 @@ export default function About() {
                         <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify light-accent fs-medium">
-                                    Raised on the coast of Brazil, I relocated to the US in 2020 and since then, technology has been my calling.
-                                    I believe that <span className="gradient-text">coding</span> was destined to choose me, as I take pleasure in
-                                    learning new tricks and tools that simplify both my work and daily life. My journey as a software engineer
-                                    commenced from this passion for problem-solving and creating aesthetically pleasing outcomes.
+                                    I recently found my true calling in technology. With an innate aptitude for coding, I take great pleasure in continually acquiring new knowledge and mastering the latest tools and techniques to streamline both my work and personal life. My journey as a software engineer began with a passion for creative problem-solving and a dedication to crafting aesthetically pleasing outcomes. I firmly believe that my affinity for coding is more than mere happenstance, and I approach every project with a commitment to excellence that is fueled by my innate passion for the field.
                                 </p>
                             </Col>
                         </Row>
                         <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify light-accent fs-medium">
-                                    In my pursuit of honing my craft, I challenge myself to constantly improve, and welcome any feedback or advice that could help me reach my goals.
-                                    Currently, I'm working on a personal project, Bugs Diaries, a website that allows writers to publish, edit, and manage their articles
-                                    about the latest information on technology trends, best practices, and emerging technologies. My aim is to inspire future programmers by passing on the knowledge.
-                                    The site also has a commenting system that enables readers to interact with authors, ask questions, and share their thoughts.
-                                </p>
+                                In my unrelenting pursuit of honing my craft, I continually challenge myself to improve and readily welcome constructive feedback and advice that can aid me in achieving my objectives. At present, I am deeply immersed in a personal project called Bugs Diaries, which is a website that empowers writers to publish, edit, and manage their articles on the latest information regarding technology trends, emerging technologies, and best practices. My ultimate goal is to inspire future programmers by sharing my knowledge and expertise with others. To foster engagement, the site also features a dynamic commenting system that facilitates interaction between authors and readers, enabling the latter to ask questions and share their thoughts.                                </p>
                             </Col>
                         </Row>
                         <Row>
@@ -56,6 +49,6 @@ export default function About() {
                     </Col>
                 </Row>
             </Card>
-        </Container>    
+        </Container>
     )
 }
