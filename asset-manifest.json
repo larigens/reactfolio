@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactfolio/static/css/main.f9fc3c11.css",
-    "main.js": "/reactfolio/static/js/main.bf6bff14.js",
+    "main.js": "/reactfolio/static/js/main.928e3506.js",
     "static/js/787.612b19a2.chunk.js": "/reactfolio/static/js/787.612b19a2.chunk.js",
     "static/media/pawpals.png": "/reactfolio/static/media/pawpals.d3ed90dac0a3d78fb57d.png",
     "static/media/voyage.png": "/reactfolio/static/media/voyage.d61916f5849d4e70642e.png",
@@ -11,14 +11,14 @@
     "static/media/avatar.png": "/reactfolio/static/media/avatar.23e03b7bdec61d42a395.png",
     "static/media/noter.png": "/reactfolio/static/media/noter.730e126f0bb719ac3e9f.png",
     "static/media/finwiz.png": "/reactfolio/static/media/finwiz.e17001cb772c5af4f715.png",
-    "static/media/Resume.docx": "/reactfolio/static/media/Resume.3536108c1370a4f5e482.docx",
+    "static/media/Resume.docx": "/reactfolio/static/media/Resume.aeb8c0d9ce01f44b2896.docx",
     "index.html": "/reactfolio/index.html",
     "main.f9fc3c11.css.map": "/reactfolio/static/css/main.f9fc3c11.css.map",
-    "main.bf6bff14.js.map": "/reactfolio/static/js/main.bf6bff14.js.map",
+    "main.928e3506.js.map": "/reactfolio/static/js/main.928e3506.js.map",
     "787.612b19a2.chunk.js.map": "/reactfolio/static/js/787.612b19a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9fc3c11.css",
-    "static/js/main.bf6bff14.js"
+    "static/js/main.928e3506.js"
   ]
 }
