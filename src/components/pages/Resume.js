@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faEye } from '@fortawesome/free-solid-svg-icons';
 import { skills } from '../../data/skills.js';
-import resume from '../../assets/pdf/Resume.pdf';
+import resume from '../../assets/pdf/Resume.docx';
 
 export default function Resume() {
     return (

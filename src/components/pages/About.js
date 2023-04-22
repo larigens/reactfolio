@@ -24,14 +24,23 @@ export default function About() {
                         <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify light-accent fs-medium">
-                                    I recently found my true calling in technology. With an innate aptitude for coding, I take great pleasure in continually acquiring new knowledge and mastering the latest tools and techniques to streamline both my work and personal life. My journey as a software engineer began with a passion for creative problem-solving and a dedication to crafting aesthetically pleasing outcomes. I firmly believe that my affinity for coding is more than mere happenstance, and I approach every project with a commitment to excellence that is fueled by my innate passion for the field.
+                                    I recently found my true calling in technology. With an innate aptitude for coding, I take great pleasure in continually acquiring new knowledge and mastering the latest tools and techniques to streamline both my work and personal life.
+                                    My journey as a software engineer began with a passion for creative problem-solving and a dedication to crafting aesthetically pleasing outcomes.
+                                    I firmly believe that my affinity for coding is more than mere happenstance, and I approach every project with a commitment to excellence that is fueled by my innate passion for the field.
                                 </p>
                             </Col>
                         </Row>
                         <Row>
                             <Col className="card-text me-2 pb-3">
                                 <p className="justify light-accent fs-medium">
-                                In my unrelenting pursuit of honing my craft, I continually challenge myself to improve and readily welcome constructive feedback and advice that can aid me in achieving my objectives. At present, I am deeply immersed in a personal project called Bugs Diaries, which is a website that empowers writers to publish, edit, and manage their articles on the latest information regarding technology trends, emerging technologies, and best practices. My ultimate goal is to inspire future programmers by sharing my knowledge and expertise with others. To foster engagement, the site also features a dynamic commenting system that facilitates interaction between authors and readers, enabling the latter to ask questions and share their thoughts.                                </p>
+                                    As a junior web developer with a background in financial services, I bring a unique perspective and attention to detail to coding. My dedication, work ethic, and willingness to tackle any challenge make me an asset to any team. I am a quick learner and eager to prove myself in the exciting field of IT. Let's work together to build something great!
+                                </p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="card-text me-2 pb-3">
+                                <p className="justify light-accent fs-medium">
+                                    In my unrelenting pursuit of honing my craft, I continually challenge myself to improve and readily welcome constructive feedback and advice that can aid me in achieving my objectives. At present, I am deeply immersed in a personal project called Bugs Diaries, which is a website that empowers writers to publish, edit, and manage their articles on the latest information regarding technology trends, emerging technologies, and best practices. My ultimate goal is to inspire future programmers by sharing my knowledge and expertise with others. To foster engagement, the site also features a dynamic commenting system that facilitates interaction between authors and readers, enabling the latter to ask questions and share their thoughts.                                </p>
                             </Col>
                         </Row>
                         <Row>
